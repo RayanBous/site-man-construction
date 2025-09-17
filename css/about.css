@@ -1,0 +1,105 @@
+.about {
+  background: #ffffff;
+  color: #111;
+  padding: 100px 50px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-row {
+  display: flex;
+  align-items: stretch;
+  gap: 50px;
+  margin-bottom: 80px;
+}
+
+.about-row.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.about-text h2 {
+  font-size: 32px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.about-text p, .about-text li {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.about-text ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #007bff;
+  font-weight: bold;
+}
+
+.about .cta .btn {
+  margin-top: 20px;
+  padding: 5px 8px;
+  border: 2px solid #111;
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.about .cta .btn:hover {
+  background: #007bff;
+  border-color: #111;
+  color: #111;
+}
+
+/* Responsive pour tablettes et mobiles */
+@media (max-width: 992px) {
+  .about-row, .about-row.reverse {
+    flex-direction: column;
+  }
+  .about-text {
+    text-align: center;
+  }
+  .about-image img {
+    height: auto;
+  }
+}
