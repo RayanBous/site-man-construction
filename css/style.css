@@ -1,4 +1,3 @@
-/* ===== Réinitialisation basique ===== */
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +7,9 @@
 
 body {
   color: white;
-  background: #000; /* au cas où l’image ne charge pas */
+  background: #000; 
 }
 
-/* ===== NAVBAR ===== */
 header {
   position: fixed;
   top: 0;
@@ -21,7 +19,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5); /* fond transparent */
+  background: rgba(0, 0, 0, 0.5); 
   z-index: 1000;
 }
 
@@ -44,7 +42,7 @@ header .menu {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin-left: auto; /* pousse le menu à droite */
+  margin-left: auto; 
 }
 
 header .menu li a {
@@ -55,10 +53,9 @@ header .menu li a {
 }
 
 header .menu li a:hover {
-  color: #007bff; /* bleu au survol */
+  color: #007bff; 
 }
 
-/* ===== HERO SECTION ===== */
 .hero {
   position: relative;
   height: 100vh;
@@ -97,7 +94,7 @@ header .menu li a:hover {
 }
 
 .hero h1 .highlight {
-  color: #007bff; /* bleu */
+  color: #007bff; 
   font-size: 100px;
 }
 
@@ -121,8 +118,8 @@ header .menu li a:hover {
 }
 
 .hero .btn:hover {
-  background: #007bff; /* bleu */
-  border-color: #007bff; /* bleu */
+  background: #007bff; 
+  border-color: #007bff; 
   color: white;
 }
 

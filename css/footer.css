@@ -58,7 +58,7 @@ footer::before {
 }
 
 .footer-info a:hover {
-  color: #FFD700; /* jaune sur survol */
+  color: #FFD700; 
 }
 
 .footer-info p {
@@ -74,7 +74,6 @@ footer p.copy {
   z-index: 1;
 }
 
-/* Responsive */
 @media (max-width: 992px) {
   .footer-info {
     flex-direction: column;

@@ -91,7 +91,6 @@
   opacity: 0.9;
 }
 
-/* Images d'arrière-plan pour chaque service */
 .electricite {
   background-image: url('../images/technicien.jpg');
 }
@@ -108,7 +107,6 @@
   background-image: url('../images/demolition.jpg');
 }
 
-/* Responsive pour tablettes et mobiles */
 @media (max-width: 768px) {
   .services {
     padding: 60px 20px;
