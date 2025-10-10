@@ -1,4 +1,3 @@
-/* Import de la police Merriweather */
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 * {
@@ -13,7 +12,6 @@ body {
   background: #000;
 }
 
-/* HEADER */
 header {
   position: fixed;
   top: 0;
@@ -59,10 +57,9 @@ header .menu li a {
 }
 
 header .menu li a:hover {
-  color: #e6b800; /* doré au survol */
+  color: #e6b800; 
 }
 
-/* SECTION HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -119,7 +116,7 @@ header .menu li a:hover {
 .hero-content h1 {
   font-size: 80px;
   font-weight: bold;
-  color: #e6b800; /* doré principal */
+  color: #e6b800; 
   margin-bottom: 20px;
 }
 
@@ -148,7 +145,6 @@ header .menu li a:hover {
   color: #111;
 }
 
-/* RÉALISATIONS */
 .realisations {
   background: #ffffff;
   color: #111;
@@ -166,7 +162,7 @@ header .menu li a:hover {
 
 .project h2 {
   font-size: 32px;
-  color: #e6b800; /* doré */
+  color: #e6b800; 
   margin-bottom: 10px;
 }
 
@@ -203,7 +199,6 @@ header .menu li a:hover {
   color: #333;
 }
 
-/* LIGHTBOX */
 .lightbox {
   display: none;
   position: fixed;
@@ -249,7 +244,6 @@ header .menu li a:hover {
   color: #e6b800;
 }
 
-/* SECTION APPEL À L’ACTION */
 .cta {
   text-align: center;
   margin-top: 60px;
@@ -299,7 +293,6 @@ header .menu li a:hover {
   left: 100%;
 }
 
-/* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
   .hero-content h1 {
     font-size: 50px;

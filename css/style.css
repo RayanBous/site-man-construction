@@ -12,7 +12,6 @@ body {
   background: #000; 
 }
 
-/* HEADER */
 header {
   position: fixed;
   top: 0;
@@ -57,12 +56,10 @@ header .menu li a {
   white-space: nowrap;
 }
 
-/* Ancien bleu (#007bff) remplacé par un jaune doré (#e6b800) */
 header .menu li a:hover {
   color: #e6b800;
 }
 
-/* HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -111,7 +108,7 @@ header .menu li a:hover {
 }
 
 .hero h1 .highlight {
-  color: #e6b800; /* jaune doré à la place du bleu */
+  color: #e6b800; 
   font-size: 100px;
 }
 
@@ -133,14 +130,12 @@ header .menu li a:hover {
   transition: all 0.3s;
 }
 
-/* Ancien bleu (#007bff) remplacé par un jaune doré (#e6b800) */
 .hero .btn:hover {
   background: #e6b800;
   border-color: #e6b800;
   color: white;
 }
 
-/* RESPONSIVE */
 @media (max-width: 1024px) {
   .hero h1 {
     font-size: 50px;
