@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 body {
@@ -10,6 +12,7 @@ body {
   background: #000; 
 }
 
+/* HEADER */
 header {
   position: fixed;
   top: 0;
@@ -19,7 +22,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
 
@@ -42,8 +45,8 @@ header .menu {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin-left: auto; 
-  flex-wrap: wrap; 
+  margin-left: auto;
+  flex-wrap: wrap;
 }
 
 header .menu li a {
@@ -51,13 +54,15 @@ header .menu li a {
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
+/* Ancien bleu (#007bff) remplacé par un jaune doré (#e6b800) */
 header .menu li a:hover {
-  color: #007bff; 
+  color: #e6b800;
 }
 
+/* HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -71,9 +76,9 @@ header .menu li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;        
-  filter: brightness(70%);  
-  z-index: 1;               
+  object-fit: cover;
+  filter: brightness(70%);
+  z-index: 1;
 }
 
 .hero::before {
@@ -83,18 +88,13 @@ header .menu li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); 
-  z-index: 2; 
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 
 .hero .overlay {
   position: relative;
   z-index: 3;
-}
-
-.hero .overlay {
-  position: relative;
-  z-index: 2;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -111,7 +111,7 @@ header .menu li a:hover {
 }
 
 .hero h1 .highlight {
-  color: #007bff; 
+  color: #e6b800; /* jaune doré à la place du bleu */
   font-size: 100px;
 }
 
@@ -133,12 +133,14 @@ header .menu li a:hover {
   transition: all 0.3s;
 }
 
+/* Ancien bleu (#007bff) remplacé par un jaune doré (#e6b800) */
 .hero .btn:hover {
-  background: #007bff; 
-  border-color: #007bff; 
+  background: #e6b800;
+  border-color: #e6b800;
   color: white;
 }
 
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .hero h1 {
     font-size: 50px;
@@ -159,11 +161,11 @@ header .menu li a:hover {
   }
 
   header .menu {
-    gap: 15px; 
+    gap: 15px;
   }
 
   header .menu li a {
-    font-size: 14px; 
+    font-size: 14px;
   }
 
   .hero h1 {
@@ -190,11 +192,11 @@ header .menu li a:hover {
   }
 
   .hero h1 {
-    font-size: 38px; 
+    font-size: 38px;
   }
 
   .hero h1 .highlight {
-    font-size: 46px; 
+    font-size: 46px;
   }
 
   .hero h2 {

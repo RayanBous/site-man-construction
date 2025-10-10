@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 .services {
   background: #f8f9fa;
   color: #111;
   padding: 100px 50px;
+  font-family: 'Merriweather', serif;
 }
 
 .services-container {
@@ -26,7 +29,7 @@
 
 .services-intro h3 {
   font-size: 28px;
-  color: #007bff;
+  color: #e6b800; 
   margin-bottom: 20px;
   font-weight: bold;
 }
@@ -38,7 +41,7 @@
 }
 
 .services-intro p strong {
-  color: #007bff;
+  color: #e6b800;
 }
 
 .services-grid {
@@ -76,7 +79,7 @@
 }
 
 .service-item:hover .service-overlay {
-  background: linear-gradient(to top, rgba(0, 123, 255, 0.9), transparent);
+  background: linear-gradient(to top, rgba(230, 184, 0, 0.9), transparent);
 }
 
 .service-item h4 {
@@ -91,6 +94,7 @@
   opacity: 0.9;
 }
 
+/* Images des services */
 .electricite {
   background-image: url('../images/technicien.jpg');
 }
@@ -111,24 +115,24 @@
   .services {
     padding: 60px 20px;
   }
-  
+
   .services h2 {
     font-size: 32px;
   }
-  
+
   .services-intro h3 {
     font-size: 24px;
   }
-  
+
   .services-intro p {
     font-size: 16px;
   }
-  
+
   .services-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-  
+
   .service-item {
     height: 250px;
   }

@@ -1,6 +1,8 @@
+/* === Section Partenaires === */
 .partenaires {
     padding: 80px 20px;
     background-color: #f8f9fa;
+    font-family: 'Merriweather', serif;
 }
 
 .partenaires-container {
@@ -15,6 +17,7 @@
     color: #2c3e50;
 }
 
+/* === Introduction === */
 .partenaires-intro {
     text-align: center;
     margin-bottom: 60px;
@@ -29,12 +32,14 @@
     line-height: 1.6;
 }
 
+/* === Grille des partenaires === */
 .partenaires-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
 }
 
+/* === Cartes partenaires === */
 .partenaire-card {
     background: white;
     border-radius: 10px;
@@ -53,6 +58,7 @@
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
 }
 
+/* === Logo partenaires === */
 .partenaire-logo {
     width: 120px;
     height: 120px;
@@ -71,19 +77,21 @@
     object-fit: contain;
 }
 
+/* === Initiales partenaires === */
 .partenaire-initials {
     font-size: 32px;
     font-weight: bold;
-    color: #007bff;
+    color: #e6b800;
     width: 80px;
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #e9f2ff;
+    background-color: #fff8cc;
     border-radius: 50%;
 }
 
+/* === Infos partenaires === */
 .partenaire-info h3 {
     font-size: 20px;
     margin-bottom: 10px;
@@ -95,6 +103,7 @@
     line-height: 1.5;
 }
 
+/* === Responsive === */
 @media (max-width: 768px) {
     .partenaires {
         padding: 60px 15px;

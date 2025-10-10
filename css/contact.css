@@ -8,6 +8,7 @@
   align-items: center;
   text-align: center;
   color: white;
+  font-family: 'Merriweather', serif;
 }
 
 .contact-hero video.background {
@@ -42,7 +43,7 @@
 .contact-hero h1 {
   font-size: 70px;
   margin-bottom: 20px;
-  color: #007bff;
+  color: #e6b800;
 }
 
 .contact-hero p {
@@ -54,7 +55,7 @@
 .contact-infos {
   padding: 80px 20px;
   background: #ffffff; 
-  color: black
+  color: black;
 }
 
 .contact-container {
@@ -86,7 +87,7 @@
 .contact-text h2 {
   font-size: 36px;
   margin-bottom: 20px;
-  color: #007bff;
+  color: #e6b800;
 }
 
 .contact-text p {
@@ -107,7 +108,7 @@
 }
 
 .contact-text a {
-  color: #007bff;
+  color: #e6b800;
   text-decoration: none;
   font-weight: bold;
 }
@@ -134,7 +135,7 @@
   font-size: 32px;
   margin-bottom: 15px;
   text-align: center;
-  color: #007bff;
+  color: #e6b800;
 }
 
 .contact-form p {
@@ -164,7 +165,7 @@
 
 .bureaux-section h2 {
   font-size: 32px;
-  color: #007bff;
+  color: #e6b800;
   margin-bottom: 10px;
 }
 
@@ -190,7 +191,7 @@
 }
 
 .bureau h3 {
-  color: #007bff;
+  color: #e6b800;
   margin-bottom: 10px;
 }
 

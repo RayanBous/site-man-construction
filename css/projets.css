@@ -1,8 +1,11 @@
+/* Import de la police Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Merriweather', serif;
 }
 
 body {
@@ -10,6 +13,7 @@ body {
   background: #000;
 }
 
+/* HEADER */
 header {
   position: fixed;
   top: 0;
@@ -19,7 +23,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5); 
+  background: rgba(0, 0, 0, 0.5);
   z-index: 1000;
 }
 
@@ -42,8 +46,8 @@ header .menu {
   list-style: none;
   display: flex;
   gap: 30px;
-  margin-left: auto; 
-  flex-wrap: wrap; 
+  margin-left: auto;
+  flex-wrap: wrap;
 }
 
 header .menu li a {
@@ -51,13 +55,14 @@ header .menu li a {
   text-decoration: none;
   font-size: 16px;
   transition: color 0.3s;
-  white-space: nowrap; 
+  white-space: nowrap;
 }
 
 header .menu li a:hover {
-  color: #007bff; 
+  color: #e6b800; /* doré au survol */
 }
 
+/* SECTION HERO */
 .hero {
   position: relative;
   height: 100vh;
@@ -71,7 +76,7 @@ header .menu li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;        
+  object-fit: cover;
   z-index: 1;
 }
 
@@ -82,18 +87,13 @@ header .menu li a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4); 
-  z-index: 2; 
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 2;
 }
 
 .hero .overlay {
   position: relative;
   z-index: 3;
-}
-
-.hero .overlay {
-  position: relative;
-  z-index: 2;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -119,7 +119,7 @@ header .menu li a:hover {
 .hero-content h1 {
   font-size: 80px;
   font-weight: bold;
-  color: #007bff; 
+  color: #e6b800; /* doré principal */
   margin-bottom: 20px;
 }
 
@@ -143,11 +143,12 @@ header .menu li a:hover {
 }
 
 .hero .btn:hover {
-  background: #007bff; 
-  border-color: #007bff;
-  color: white;
+  background: #e6b800;
+  border-color: #e6b800;
+  color: #111;
 }
 
+/* RÉALISATIONS */
 .realisations {
   background: #ffffff;
   color: #111;
@@ -164,8 +165,8 @@ header .menu li a:hover {
 }
 
 .project h2 {
-  font-size: 32px; 
-  color: #007bff;
+  font-size: 32px;
+  color: #e6b800; /* doré */
   margin-bottom: 10px;
 }
 
@@ -193,7 +194,7 @@ header .menu li a:hover {
 
 .project-gallery img:hover {
   transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 .project .description {
@@ -202,6 +203,7 @@ header .menu li a:hover {
   color: #333;
 }
 
+/* LIGHTBOX */
 .lightbox {
   display: none;
   position: fixed;
@@ -225,12 +227,12 @@ header .menu li a:hover {
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
-  transform: scale(0);          
-  transition: transform 0.2s ease; 
+  transform: scale(0);
+  transition: transform 0.2s ease;
 }
 
 .lightbox.show .lightbox-img {
-  transform: scale(1);         
+  transform: scale(1);
 }
 
 .lightbox .close {
@@ -244,9 +246,10 @@ header .menu li a:hover {
 }
 
 .lightbox .close:hover {
-  color: #007bff;
+  color: #e6b800;
 }
 
+/* SECTION APPEL À L’ACTION */
 .cta {
   text-align: center;
   margin-top: 60px;
@@ -256,14 +259,14 @@ header .menu li a:hover {
   font-size: 22px;
   font-weight: bold;
   margin-bottom: 20px;
-  color: #111; 
+  color: #111;
 }
 
 .cta .btn {
   display: inline-block;
   padding: 15px 40px;
-  background: #007bff;
-  color: white;
+  background: #e6b800;
+  color: #111;
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
@@ -287,15 +290,16 @@ header .menu li a:hover {
 }
 
 .cta .btn:hover {
-  background: #0056b3;
+  background: #d4a300;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(230, 184, 0, 0.4);
 }
 
 .cta .btn:hover::before {
   left: 100%;
 }
 
+/* RESPONSIVE DESIGN */
 @media (max-width: 1024px) {
   .hero-content h1 {
     font-size: 50px;
@@ -312,11 +316,11 @@ header .menu li a:hover {
   }
 
   header .menu {
-    gap: 15px; 
+    gap: 15px;
   }
 
   header .menu li a {
-    font-size: 14px; 
+    font-size: 14px;
   }
 
   .hero-content h1 {
@@ -339,7 +343,7 @@ header .menu li a:hover {
   }
 
   .hero-content h1 {
-    font-size: 38px; 
+    font-size: 38px;
   }
 
   .hero-content p {

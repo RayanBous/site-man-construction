@@ -2,6 +2,7 @@
   background: #ffffff;
   color: #111;
   padding: 100px 50px;
+  font-family: 'Merriweather', serif;
 }
 
 .about-container {
@@ -46,7 +47,7 @@
 
 .about-text h2 {
   font-size: 32px;
-  color: #007bff;
+  color: #e6b800;
   margin-bottom: 20px;
 }
 
@@ -72,14 +73,14 @@
   content: "•";
   position: absolute;
   left: 0;
-  color: #007bff;
+  color: #e6b800;
   font-weight: bold;
 }
 
 .about .cta .btn {
   display: inline-block;
   padding: 15px 40px;
-  background: #007bff;
+  background: #e6b800;
   color: white;
   text-decoration: none;
   font-weight: bold;
@@ -104,9 +105,9 @@
 }
 
 .about .cta .btn:hover {
-  background: #0056b3;
+  background: #b38f00;
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(0, 123, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(230, 184, 0, 0.4);
 }
 
 .about .cta .btn:hover::before {

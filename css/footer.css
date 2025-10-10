@@ -5,6 +5,7 @@ footer {
   position: relative;
   font-size: 14px;
   overflow: hidden;
+  font-family: 'Merriweather', serif;
 }
 
 footer::before {
@@ -47,7 +48,7 @@ footer::before {
 
 .footer-info i {
   margin-right: 8px;
-  color: #007bff;
+  color: #e6b800;
   transition: color 0.3s;
 }
 
@@ -58,7 +59,7 @@ footer::before {
 }
 
 .footer-info a:hover {
-  color: #FFD700; 
+  color: #e6b800; 
 }
 
 .footer-info p {
