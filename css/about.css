@@ -77,6 +77,8 @@
 }
 
 .about .cta .btn {
+  display: inline-block; 
+  white-space: nowrap;  
   margin-top: 20px;
   padding: 5px 8px;
   border: 2px solid #e6b800;
